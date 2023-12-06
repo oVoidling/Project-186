@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPE-Particles</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity position="0 1 0" spe-particles="color: #fffbf8, #ffcc00, #ff5733, #c70039, #900c3f;
+                                                 distribution: disc;
+                                                 randomize-velocity: true;
+                                                 radius: 1;
+                                                 particle-count: 10000;
+                                                 velocity: 1;
+                                                 velocity-spread: 50;
+                                                 drag: 1;
+                                                 max-age: 5;
+                                                 duration: -1;
+                                                 blending: additive;
+                                                 active-multiplier: 20000;
+                                                 size: 0.1, 0.5, 0.1, 0.5"></a-entity>
+        <a-entity position="0 3 2" spe-particles="color: #fffbf8, #ffcc00, #ff5733, #c70039, #900c3f;
+                                                 distribution: disc;
+                                                 randomize-velocity: true;
+                                                 radius: 1;
+                                                 particle-count: 10000;
+                                                 velocity: 1;
+                                                 velocity-spread: 50;
+                                                 drag: 1;
+                                                 max-age: 5;
+                                                 duration: -1;
+                                                 blending: additive;
+                                                 active-multiplier: 20000;
+                                                 size: 0.1, 0.5, 0.1, 0.5"></a-entity>
+      
+        <a-entity>
+        <a-entity position="0 3 2" spe-particles="color: blue, yellow, purple, lime;
+            distribution: disc;
+            randomize-velocity: true;
+            radius: 1;
+            particle-count: 10000;
+            velocity: 1;
+            velocity-spread: 50;
+            drag: 1;
+            max-age: 5;
+            duration: -1;
+            blending: additive;
+            active-multiplier: 20000;
+            size: 0.2, 0.4, 0.5, 0.7"></a-entity>
+
+<a-entity>
+          <a-camera position="0 0 30"></a-camera>
+        </a-entity>
+      
+        <a-sky color="#000" material="side: double;"></a-sky>
+      </a-scene>
+</body>
+</html>
